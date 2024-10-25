@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:  "Poppins", sans-serif;
+}
+p ,h1 , h2 , h3 ,h4 ,h5 h6
+{
+margin: 0 !important;
+}
+body{
+  background-color: rgba(255, 255, 255, 1);
+}
+#sidebar
+{
+  width: 78px;
+  height: 1954px;
+  border-radius: 0px 30px 30px 0px;
+  opacity: 0px;
+  background-color: rgba(244, 235, 215, 1);
+
+}
+.active{
+  width:  50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  opacity: 0px;
+  color: white;
+  background-color: rgba(215, 165, 63, 1);
+
+}
+.menue-list{
+  gap: 10px;
+
+}
+.opacity {
+  background-color: rgba(255, 255, 255, 0);
+  color: black !important;
+}
+.my-contianer{
+
+  width: calc(100% - 78px);
+  padding: 20px;
+}
+.profile-continer{
+  height: 61px;
+}
+.profile-svg{
+  width: 24px;
+  height: 24px;
+
+
+}
+.search-container
+{
+  width:469px;
+height:61px;
+background: rgba(255, 255, 255, 1);
+position: relative;
+
+
+
+
+
+}
+.search-container img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+}
+.search-container input
+{
+
+
+  padding: 18px 17px 18px 17px;
+
+  border-radius: 10px 10px 10px 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  outline: none;
+  border: 1px solid rgba(127, 127, 127, 1)
+
+
+}
+.WorkSpace{
+  display: flex ;
+  flex-shrink: 1;
+}
+.WorkSpace-bg{
+background-color: rgba(248, 247, 247, 1);
+}
+
+
+
+
+
+.WorkSpace p {
+  font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: -0.4099999964237213px;
+text-align: center;
+color :rgba(215, 165, 63, 1);
+}
+.WorkSpace {
+  background-color: rgba(248, 247, 247, 1);
+  color :rgba(215, 165, 63, 1);
+  width: 157px;
+height: 60px;
+
+padding: 18px 32px 18px 32px;
+gap: 10px;
+border-radius: 10px 10px 0px 0px;
+}
+.worspace-card {
+border-radius: 10px;
+padding: 9px 24px;
+
+background: rgba(244, 235, 215, 1);
+
+
+
+}
+.worspace-card  h2{
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.4099999964237213px;
+  text-align: center;
+}
+.first-content{
+
+  height: auto;
+  background: rgba(244, 235, 215, 1);
+
+  border-radius: 10px 10px 10px 10px;
+
+
+}
+.first-content h2{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.4099999964237213px;
+  text-align: start;
+  color: rgba(0, 0, 0, 1);
+
+}
+.line{
+  height: 1px;
+  background-color: black;
+}
+#first-radio{
+  background: rgba(149, 111, 23, 1);
+
+}
+.chart {
+  position: relative;
+  width: 100% !important;
+
+}
+
+canvas {
+  display: block;
+  width: 100% !important;
+
+}
+.second-content{
+
+  background: rgba(244, 235, 215, 1);
+
+
+  border-radius: 10px 10px 10px 10px;
+
+
+
+}
+.bg-brown{
+  background: rgba(73, 52, 33, 1);
+
+
+}
+.right-first-content{
+
+border-radius: 10px 10px 10px 10px;
+background-color: rgba(244, 235, 215, 1);
+}
+.right-first-content h2{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  letter-spacing: 0.01em;
+  text-align: start;
+
+
+}
+.first-line{
+  height: 6px;
+  background: rgba(255, 245, 204, 1);
+
+}
+.inside-first-line{
+  background: rgba(215, 165, 63, 1);
+  height: 3px;
+
+}
+.second-line{
+height: 6px;
+background: rgba(218, 215, 254, 1);
+
+}
+.inside-second-line
+{
+height: 3px;
+background: rgba(67, 57, 242, 1);
+}
+.third-line{
+  height: 6px;
+  background: rgba(204, 248, 254, 1);
+
+}
+.inside-third-line{
+  height: 3px;
+  background: rgba(2, 160, 252, 1);
+
+}
+.inside-fourth-line{
+  height: 3px;
+  background: rgba(2, 160, 252, 1);
+
+}
+.fourth-line{
+  height: 6px;
+  background: rgba(255, 229, 211, 1);
+
+}
+.inside-fourth-line{
+  height: 3px;
+  background: rgba(255, 58, 41, 1);
+
+}
+.right-second-content{
+background-color: rgba(244, 235, 215, 1);
+border-radius: 10px 10px 10px 10px;
+
+
+}
+.right-second-content h2 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.4099999964237213px;
+
+
+}
+.right-third-content h2 {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.29px;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+}
+.right-third-content {
+
+  border-radius: 10px 10px 10px 10px;
+
+  background: rgba(244, 235, 215, 1);
+
+}
+.right-fourth-content{
+  border-radius: 10px 10px 10px 10px;
+
+  background: rgba(244, 235, 215, 1);
+}
+.my-top{
+  top: 20px !important;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="d-flex flex-row gap-3">
+  <div id="sidebar" class="d-flex flex-column gap-2 align-items-center">
+    <img src="./assets/e8bd60f9adb37778f2c20898621f2e85.png" class="col-12 mb-1" alt="">
+    <div class="menue-list d-flex flex-column align-items-center ">
+    <span class="active d-flex justify-content-center align-items-center"><i class="fa-solid fa-house"></i></span>
+    <span class="active opacity d-flex justify-content-center align-items-center"><img src="./assets/Group.svg" alt=""></span>
+    <span class="active opacity d-flex justify-content-center align-items-center"><img src="./assets/Group.png" alt=""></span>
+    <span class="active opacity d-flex justify-content-center align-items-center"><img src="./assets/Group (1).svg" alt=""></span>
+    <span class="active opacity d-flex justify-content-center align-items-center"><img src="./assets/Group (2).svg" alt=""></span>
+  </div>
+
+
+  </div>
+<div class="my-contianer d-flex flex-column">
+<div class="header d-flex flex-row-reverse justify-content-between">
+  <div class="d-flex flex-row">
+   <div class="profile-continer gap-2  d-flex flex-wrap flex-row justify-content-center">
+   <div class="search-container postion-relative">
+<img src="./assets/search.svg" class="postion-absolute " alt="">
+    <input type="text" class="h-100 col-12" placeholder="Search">
+   </div>
+  <div class="d-flex  gap-2  d-flex flex-wrap flex-row justify-content-center align-items-center">
+    <img src="./assets/Vector.svg" class="profile-svg" alt="">
+    <img src="./assets/profile.svg" class="profile-svg" alt="">
+    <p class="m-0">Rawiaa Mouhktar</p>
+  </div>
+   </div>
+  </div>
+  <div class="WorkSpace mt-5 WorkSpace-bg d-flex justify-content-between align-items-center">
+    <i class="fa-solid fa-house"></i>
+    <p class="m-0">Home</p>
+  </div>
+</div>
+<div class="WorkSpace-bg p-4 d-flex flex-column gap-3">
+<div class="d-flex flex-row flex-wrap col-12 row g-1 ">
+<div class="col-12 col-lg-2 col-md-2">
+<div class="worspace-card d-flex flex-column align-items-start gap-2">
+<h2>New Client</h2>
+<h2><b>70</b></h2>
+</div>
+</div>
+<div class="col-12 col-lg-2 col-md-2">
+<div class="worspace-card d-flex flex-column align-items-start gap-2">
+<h2>Number products</h2>
+<h2><b>200</b></h2>
+</div>
+</div>
+<div class="col-12 col-lg-2 col-md-2">
+<div class="worspace-card d-flex flex-column align-items-start gap-2">
+<h2>Total Orders</h2>
+<h2><b>1.800</b></h2>
+</div>
+</div>
+<div class="col-12 col-lg-2 col-md-2">
+<div class="worspace-card d-flex flex-column align-items-start gap-2">
+<h2>Total Product</h2>
+<h2><b>1.500</b></h2>
+</div>
+</div>
+<div class="col-12 col-lg-2 col-md-2">
+<div class="worspace-card d-flex flex-column align-items-start gap-2">
+<h2>Total sales </h2>
+<h2><b>20.000</b></h2>
+</div>
+</div>
+
+<div class="col-12 col-lg-2 col-md-2">
+<div class="worspace-card d-flex flex-column align-items-start gap-2">
+<h2>Net Profit</h2>
+<h2><b>1.000</b></h2>
+</div>
+</div>
+</div>
+<div class="col-12 d-flex flex-row flex-wrap row g-1 ">
+<div class="col-12 col-lg-6 col-md-6 first-left-content  d-flex flex-wrap flex-column gap-4 justify-content-center">
+<div class="col-12 first-content p-3">
+  <h2>Clients activity</h2>
+  <div class="line col-12"></div>
+  <div class="d-flex flex-row mt-1 gap-2">
+    <input type="radio" name="" id="first-radio">
+    <label for="first-radio">New comers</label>
+  </div>
+  <div class="col-12 chart">
+    <canvas id="myChart" width="400" height="200"></canvas>
+  </div>
+</div>
+<div class="col-12 first-content p-3">
+  <h2>Shipments chart</h2>
+
+  <div class="d-flex flex-row mt-1 gap-2">
+    <input type="radio" name="" id="first-radio">
+    <label for="first-radio">Imported shipments</label>
+    <input type="radio" name="" id="first-radio">
+    <label for="first-radio">Distributed shipments</label>
+  </div>
+  <div class="col-12 chart">
+    <canvas id="myChart2" width="400" height="200"></canvas>
+  </div>
+</div>
+<div class="col-12 second-content p-3">
+  <h5>Recent Order</h5>
+  <div class="line"></div>
+  <table class="table col-12 mt-2">
+    <thead class="bg-brown text-white">
+        <tr>
+            <th class="p-1">Date</th>
+            <th class="p-1">Billing Name</th>
+            <th class="p-1 text-center">Amount</th>
+            <th class="p-1">Status</th>
+            <th class="p-1">Invoice</th>
+        </tr>
+    </thead>
+    <tbody class="">
+        <tr>
+            <td>1/11/2024</td>
+            <td>Solace Parfum - 100 ml</td>
+            <td class="text-center">100</td>
+            <td>Paid</td>
+            <td><img src="./assets/arrowup.svg" alt="" width="20" height="20"></td>
+        </tr>
+        <tr>
+          <td>1/11/2024</td>
+          <td>Solace Parfum - 100 ml</td>
+          <td class="text-center">100</td>
+          <td>Paid</td>
+          <td><img src="./assets/arrowup.svg" alt="" width="20" height="20"></td>
+      </tr>
+      <tr>
+        <td>1/11/2024</td>
+        <td>Solace Parfum - 100 ml</td>
+        <td class="text-center">100</td>
+        <td>Paid</td>
+        <td><img src="./assets/arrowup.svg" alt="" width="20" height="20"></td>
+    </tr>
+    <tr>
+      <td>1/11/2024</td>
+      <td>Solace Parfum - 100 ml</td>
+      <td class="text-center">100</td>
+      <td>Paid</td>
+      <td><img src="./assets/arrowup.svg" alt="" width="20" height="20"></td>
+  </tr>
+  <tr>
+    <td>1/11/2024</td>
+    <td>Solace Parfum - 100 ml</td>
+    <td class="text-center">100</td>
+    <td>Paid</td>
+    <td><img src="./assets/arrowup.svg" alt="" width="20" height="20"></td>
+</tr>
+<tr>
+  <td>1/11/2024</td>
+  <td>Solace Parfum - 100 ml</td>
+  <td class="text-center">100</td>
+  <td>Paid</td>
+  <td><img src="./assets/arrowup.svg" alt="" width="20" height="20"></td>
+</tr>
+    </tbody>
+</table>
+
+</div>
+<div class="col-12 second-content p-3">
+  <div class="d-flex flex-row justify-content-between">
+
+    <h5>Top Selling Products</h5>
+    <img src="./assets/chart.svg" alt="">
+  </div>
+
+  <div class="line"></div>
+  <table class="table col-12 mt-2">
+    <thead class="bg-brown text-white">
+        <tr>
+            <th class="p-1">Products</th>
+            <th class="p-1">Support Agent</th>
+            <th class="p-1 text-center">Categories</th>
+            <th class="p-1">Price</th>
+            <th class="p-1">Discount</th>
+            <th class="p-1">Earnings</th>
+        </tr>
+    </thead>
+    <tbody class="">
+        <tr>
+            <td>Diriyah</td>
+            <td>Salsubh Store</td>
+            <td class="text-center">Rosary</td>
+
+            <td>SAR 20</td>
+            <td>50 %</td>
+            <td>SAR 100</td>
+        </tr>
+        <tr>
+          <td>Diriyah</td>
+          <td>Salsubh Store</td>
+          <td class="text-center">Rosary</td>
+
+          <td>SAR 20</td>
+          <td>50 %</td>
+          <td>SAR 100</td>
+      </tr>
+      <tr>
+        <td>Diriyah</td>
+        <td>Salsubh Store</td>
+        <td class="text-center">Rosary</td>
+
+        <td>SAR 20</td>
+        <td>50 %</td>
+        <td>SAR 100</td>
+    </tr>
+    <tr>
+      <td>Diriyah</td>
+      <td>Salsubh Store</td>
+      <td class="text-center">Rosary</td>
+
+      <td>SAR 20</td>
+      <td>50 %</td>
+      <td>SAR 100</td>
+  </tr>
+  <tr>
+    <td>Diriyah</td>
+    <td>Salsubh Store</td>
+    <td class="text-center">Rosary</td>
+
+    <td>SAR 20</td>
+    <td>50 %</td>
+    <td>SAR 100</td>
+</tr>
+<tr>
+  <td>Diriyah</td>
+  <td>Salsubh Store</td>
+  <td class="text-center">Rosary</td>
+
+  <td>SAR 20</td>
+  <td>50 %</td>
+  <td>SAR 100</td>
+</tr>
+    </tbody>
+</table>
+
+</div>
+</div>
+<div class="col-12 col-lg-6 col-md-6 right-content d-flex flex-wrap flex-column gap-3">
+  <div class="col-12 right-first-content p-3">
+<h2>Clients Most recent analysis</h2>
+<div class="line"></div>
+<div class="d-flex flex-row row g-3 flex-wrap col-12">
+  <div class="col-12 col-lg-3 col-md-3 d-flex gap-1">
+    <input type="radio" name="" id="New-Radio">
+    <label for="New-Radio">Purchasing</label>
+  </div>
+  <div class="col-12 col-lg-3 col-md-3 d-flex gap-1">
+    <input type="radio" name="" id="New-Radio">
+    <label for="New-Radio">Returns</label>
+  </div>
+  <div class="col-12 col-lg-3 col-md-3 d-flex gap-1">
+    <input type="radio" name="" id="New-Radio">
+    <label for="New-Radio">Requests</label>
+  </div>
+  <div class="col-12 col-lg-3 col-md-3 d-flex gap-1">
+    <input type="radio" name="" id="New-Radio">
+    <label for="New-Radio">Canceled</label>
+  </div>
+</div>
+<div class="d-flex flex-column gap-2">
+<div class="d-flex flex-column gap-2">
+<h4>Purchasing</h4>
+<div class="col-12 first-line d-flex align-items-center">
+  <div class="inside-first-line col-12"></div>
+</div>
+</div>
+<div class="d-flex flex-column gap-2">
+<h4>Returns</h4>
+<div class="col-12 second-line">
+  <div class="inside-second-line col-9"></div>
+</div>
+</div>
+<div class="d-flex flex-column gap-2">
+<h4>Requests</h4>
+<div class="col-12 third-line">
+  <div class="inside-third-line col-4"></div>
+</div>
+</div>
+<div class="d-flex flex-column gap-2">
+<h4>Canceled</h4>
+<div class="col-12 fourth-line">
+  <div class="inside-fourth-line col-1"></div>
+</div>
+</div>
+</div>
+  </div>
+  <div class="col-12 right-second-content p-3">
+    <h2>Where the clients come from?</h2>
+    <div class="line"></div>
+    <div class="d-flex flex-row gap-3 ">
+      <div class="d-flex gap-2">
+      <input type="radio" name="" id="">
+      <label for="">facebook</label>
+    </div>
+    <div class="d-flex gap-2">
+      <input type="radio" name="" id="">
+      <label for="">Instagram</label>
+    </div>
+    <div class="d-flex gap-2">
+      <input type="radio" name="" id="">
+      <label for="">Other Client</label>
+    </div>
+    </div>
+    <canvas id="chart3" width="400" height="200"></canvas>
+  </div>
+  <div class="col-12 right-third-content p-3">
+<h2>Expenses activity </h2>
+<div class="d-flex flew-row gap-2">
+<input type="radio" name="" id="">
+<label for="">hover to show the details</label>
+
+</div>
+<canvas id="chart4" width="400" height="200"></canvas>
+  </div>
+  <div class="col-12 right-fourth-content p-3">
+    <div class="d-flex flex-row justify-content-between">
+      <h2>Recent Comments</h2>
+      <img src="./assets/chart.svg" alt="">
+    </div>
+    <div class="line"></div>
+    <div class="d-flex flex-column gap-2">
+<div class="d-flex flex-row justify-content-between">
+  <div class="profile-left-content text-start d-flex flex-row gap-2 col-8 position-relative">
+    <img class="position-absolute top-0 my-top" width="20px" src="./assets/profile.svg" alt="">
+    <div class="d-flex flex-column col-9 ms-4 mt-3">
+      <b >James Anderson</b>
+      <p >Lorem Ipsum is simply dummy text of the printing
+        and type setting industry.</p>
+    </div>
+  </div>
+  <div class="profile-right-content text-end d-flex flex-column justify-content-center col-4 gap-2">
+  <p>April 14, 2024</p>
+  <p><b> Pending</b></p>
+  </div>
+</div>
+<div class="d-flex flex-row justify-content-between">
+  <div class="profile-left-content text-start d-flex flex-row gap-2 col-8 position-relative">
+    <img class="position-absolute top-0 my-top" width="20px" src="./assets/profile.svg" alt="">
+    <div class="d-flex flex-column col-9 ms-4 mt-3">
+      <b >James Anderson</b>
+      <p >Lorem Ipsum is simply dummy text of the printing
+        and type setting industry.</p>
+    </div>
+  </div>
+  <div class="profile-right-content text-end d-flex flex-column justify-content-center col-4 gap-2">
+  <p>April 14, 2024</p>
+  <p><b> Pending</b></p>
+  </div>
+</div>
+<div class="d-flex flex-row justify-content-between">
+  <div class="profile-left-content text-start d-flex flex-row gap-2 col-8 position-relative">
+    <img class="position-absolute top-0 my-top" width="20px" src="./assets/profile.svg" alt="">
+    <div class="d-flex flex-column col-9 ms-4 mt-3">
+      <b >James Anderson</b>
+      <p >Lorem Ipsum is simply dummy text of the printing
+        and type setting industry.</p>
+    </div>
+  </div>
+  <div class="profile-right-content text-end d-flex flex-column justify-content-center col-4 gap-2">
+  <p>April 14, 2024</p>
+  <p><b> Pending</b></p>
+  </div>
+</div>
+<div class="d-flex flex-row justify-content-between">
+  <div class="profile-left-content text-start d-flex flex-row gap-2 col-8 position-relative">
+    <img class="position-absolute top-0 my-top" width="20px" src="./assets/profile.svg" alt="">
+    <div class="d-flex flex-column col-9 ms-4 mt-3">
+      <b >James Anderson</b>
+      <p >Lorem Ipsum is simply dummy text of the printing
+        and type setting industry.</p>
+    </div>
+  </div>
+  <div class="profile-right-content text-end d-flex flex-column justify-content-center col-4 gap-2">
+  <p>April 14, 2024</p>
+  <p><b> Pending</b></p>
+  </div>
+</div>
+<div class="d-flex flex-row justify-content-between">
+  <div class="profile-left-content text-start d-flex flex-row gap-2 col-8 position-relative">
+    <img class="position-absolute top-0 my-top" width="20px" src="./assets/profile.svg" alt="">
+    <div class="d-flex flex-column col-9 ms-4 mt-3">
+      <b >James Anderson</b>
+      <p >Lorem Ipsum is simply dummy text of the printing
+        and type setting industry.</p>
+    </div>
+  </div>
+  <div class="profile-right-content text-end d-flex flex-column justify-content-center col-4 gap-2">
+  <p>April 14, 2024</p>
+  <p><b> Pending</b></p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+</html>
